@@ -26,7 +26,10 @@ class CreateProductsTable extends Migration
             $table->double('sales');
             $table->string('img')->nullable();
             $table->BigInteger('category_id')->unsigned();
-            $table->foreign('category_id')->references('category_id')->on('categories')->onDelete('cascade);
+            $table->foreign('category_id')->references('category_id')->on('categories')->onDelete('cascade');
+            $table->BigInteger('material_id')->unsigned();
+            $table->foreign('material_id')->references('material_id')->on('raw_materials')->onDelete('cascade');
+
         });
     }
 
