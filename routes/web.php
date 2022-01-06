@@ -21,4 +21,4 @@ Route::get('/test','OrdersController@test')->name('Test');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/ deliveries/create', ' deliveriesController@create')->name('create-delivery');
