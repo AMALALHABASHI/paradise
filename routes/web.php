@@ -22,3 +22,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ deliveries/create', ' deliveriesController@create')->name('create-delivery');
+
+
+Route::get('/ orders/create', ' OrdersController@create')->name('create-order');
+
+Route::get('/ rawMaterial/create', ' rawMaterialsController@create')->name('create-raw-material');
