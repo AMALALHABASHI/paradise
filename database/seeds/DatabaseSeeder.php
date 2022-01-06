@@ -1,4 +1,6 @@
 <?php
+'unix_socket' => env('DB_SOCKET', '/Applications/MAMP/tmp/mysql/mysql.sock'),
+
 
 use Illuminate\Database\Seeder;
 
