@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
 });
 
 Route::get('/test','CategoryiesController@test')->name('Test');
 
-
+Route::get('/test','OrdersController@test')->name('Test');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
