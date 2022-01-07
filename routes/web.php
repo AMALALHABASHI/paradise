@@ -19,6 +19,9 @@ Route::get('/test','CategoryiesController@test')->name('Test');
 
 Route::get('/test','OrdersController@test')->name('Test');
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/categories/create', 'CategoryiesController@create')->name('create-category');
+Route::post('/categories/create', 'CategoryiesController@store')->name('store-category');
+
 
