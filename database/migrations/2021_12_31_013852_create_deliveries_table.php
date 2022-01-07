@@ -16,7 +16,6 @@ class CreateDeliveriesTable extends Migration
         Schema::create('deliveries', function (Blueprint $table) {
             $table->bigIncrements('delivery_id');
             $table->bigInteger('costumer_id');
-            $table->foregin('costumer_id')->references('id')-> on('users') ->onDelete('cascade');
             $table->bigInteger('orderer_id')->unsigned();
             $table->foregin('orderer_id')->references('orderer_id')-> on('orders') ->onDelete('cascade');
             $table->date(dd , mm, yy)('date');
