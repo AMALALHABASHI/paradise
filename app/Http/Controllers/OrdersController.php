@@ -7,7 +7,8 @@ use App\Http\Controllers\Controller;
 
 class OrdersController extends Controller
 {
-    public function test(){
-    	return "Test";
+    public function create() 
+    {
+    	return view ('admin.orderss.create');
     }
 }
