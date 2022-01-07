@@ -13,7 +13,16 @@ class ProductsController extends Controller
    }
     puplic function store(Request $request){
    	$product = new Product;
-   	$product->name=$request->name ;
+   	$product->product_name=$request->product_name ;
+   	$product->description=$request->description ;
+   	$product->price=$request->price ;
+   	$product->is_sale=$request->is_sale ;
+   	$product->sales=$request->sales ;
+   	$product->size=$request->size ;
+   	$product->color=$request->color ;
+   	$product->img=$request->img;
+   	$product->category_id=$request->category_id ;
+   	$product->material_id=$request->material_id ;
    	$product->save();
    	return back();
    }

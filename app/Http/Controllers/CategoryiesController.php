@@ -15,7 +15,7 @@ class CategoryiesController extends Controller
    }
    puplic function store(Request $request){
    	$category = new Category;
-   	$category->name=$request->name ;
+   	$category->category_name=$request->category_name ;
    	$category->save();
    	return back();
    }
