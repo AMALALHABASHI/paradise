@@ -26,6 +26,8 @@ Route::get('/categories/create', 'CategoryiesController@create')->name('create-c
 Route::post('/categories/create', 'CategoryiesController@store')->name('store-category');
 Route::get('/products/create', 'ProductsController@create')->name('create-product');
 Route::post('/products/create', 'ProductsController@store')->name('store-product');
+Route::get('/products', 'ProductsController@index')->name('index-product');
+Route::get('/categories', 'CategoryiesController@index')->name('index-category');
 
 
 

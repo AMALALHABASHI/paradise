@@ -19,4 +19,8 @@ class CategoryiesController extends Controller
    	$category->save();
    	return back();
    }
+   puplic function index(){
+   	$categories = Category::all();
+    return view('admin.categories.index',compact('categories'));
+   }
 }
