@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<form action="#">
+<form action="deliveries/create" method="POST">
+	@csrf
   <div class="container text-center"
   <h2>Create Delivery</h2></div>
   <div class="input-container">
