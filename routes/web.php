@@ -24,6 +24,10 @@ Route::get('/ deliveries/create', ' deliveriesController@create')->name('create-
 
 Route::get('/categories/create', 'CategoryiesController@create')->name('create-category');
 Route::post('/categories/create', 'CategoryiesController@store')->name('store-category');
+Route::get('/products/create', 'ProductsController@create')->name('create-product');
+Route::post('/products/create', 'ProductsController@store')->name('store-product');
+
+
 
 Route::get('/ orders/create', ' OrdersController@create')->name('create-order');
 
