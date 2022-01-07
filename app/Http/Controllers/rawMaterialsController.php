@@ -26,4 +26,9 @@ class rawMaterialsController extends Controller
 		return back();
     }	
 
+
+             puplic function index(){
+            $raw_materials = Raw_material::all();
+            return view('admin.raw_materials.index',compact('raw_materials'));
+           }
 }
