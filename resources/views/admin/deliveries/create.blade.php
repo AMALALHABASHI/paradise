@@ -3,7 +3,7 @@
 @section('content')
 <form action="deliveries/create" method="POST">
 	@csrf
-  <div class="container text-center"
+  <div class="container text-center">
   <h2>Create Delivery</h2></div>
   <div class="input-container">
     <i class="fa fa-user icon"></i>
