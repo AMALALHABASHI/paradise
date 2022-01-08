@@ -38,9 +38,11 @@ Route::get('/categories/edit', 'CategoryiesController@edit/{id}')->name('edit-ca
 Route::get('/orders/create', ' OrdersController@create')->name('create-order');
 Route::post('/orders/create', ' OrdersController@store')->name('store-order');
 Route::get('/orders', 'OrdersController@index')->name('index-order');
+Route::get('/orders/edit', 'OrdersController@edit/{id}')->name('edit-order');
+
 
 
 Route::get('/rawMaterial/create', ' rawMaterialsController@create')->name('create-raw-material');
 Route::post('/rawMaterial/create', ' rawMaterialsController@store')->name('store-raw-material');
 Route::get('/rawMaterial', 'rawMaterialsController@index')->name('index-raw-material');
-
+Route::get('/rawMaterial/edit', 'rawMaterialsController@edit/{id}')->name('edit-raw-material');

@@ -7,16 +7,11 @@ use App\Order;
 
 class OrdersController extends Controller
 {
-    public function create() 
-    {
+    public function create() {
     	return view ('admin.orderss.create');
     }
 
-
-
-
-     public function store(Request $Request) 
-    {
+     public function store(Request $Request) {
     	$order = new Order;
 
 		$order->costumer_id = $Request->costumer_id;
@@ -26,8 +21,12 @@ class OrdersController extends Controller
 		$order->save();
 		return back();
     }	
+
     puplic function index(){
     $orders = Order::all();
     return view('admin.orders.index',compact('orders'));
    }
+    puplic function edit($id){
+      $orders = Order::find($id);
+    return view('admin.orders.edit',compact('orders'));
 }
