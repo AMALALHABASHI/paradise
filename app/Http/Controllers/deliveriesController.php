@@ -11,7 +11,6 @@ class deliveriesController extends Controller
     {
     	return view ('admin.deliveries.create');
     }
-
      public function store(Request $Request) 
     {
     	$delivery = new Delivery;
@@ -22,8 +21,10 @@ class deliveriesController extends Controller
 		$delivery->save();
 		return back();
     }	
-
-
+         puplic function index(){
+            $deliveries = Delivery::all();
+            return view('admin.deliveries.index',compact('deliveries'));
+     }
 
 
 }

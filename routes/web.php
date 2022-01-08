@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/deliveries/create', ' deliveriesController@create')->name('create-delivery');
 Route::post('/deliveries/create', ' deliveriesController@store')->name('store-delivery');
+Route::get('/deliveries', 'deliveriesController@index')->name('index-delivery');
 
 
 Route::get('/categories/create', 'CategoryiesController@create')->name('create-category');
@@ -34,8 +35,10 @@ Route::get('/categories', 'CategoryiesController@index')->name('index-category')
 
 Route::get('/orders/create', ' OrdersController@create')->name('create-order');
 Route::post('/orders/create', ' OrdersController@store')->name('store-order');
+Route::get('/orders', 'OrdersController@index')->name('index-order');
 
 
 Route::get('/rawMaterial/create', ' rawMaterialsController@create')->name('create-raw-material');
 Route::post('/rawMaterial/create', ' rawMaterialsController@store')->name('store-raw-material');
+Route::get('/rawMaterial', 'rawMaterialsController@index')->name('index-raw-material');
 

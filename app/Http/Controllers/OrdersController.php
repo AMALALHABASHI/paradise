@@ -26,5 +26,8 @@ class OrdersController extends Controller
 		$order->save();
 		return back();
     }	
-
+    puplic function index(){
+    $orders = Order::all();
+    return view('admin.orders.index',compact('orders'));
+   }
 }
