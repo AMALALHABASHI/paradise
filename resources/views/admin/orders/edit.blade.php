@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<form action="/orders/create" method="POST">
+<form action="/orders/edite{order->id}" method="POST">
 	@csrf
   <div class="container text-center">
   <h2>update Delivery</h2></div>
