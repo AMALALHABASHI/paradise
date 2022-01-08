@@ -30,6 +30,8 @@ Route::get('/products/create', 'ProductsController@create')->name('create-produc
 Route::post('/products/create', 'ProductsController@store')->name('store-product');
 Route::get('/products', 'ProductsController@index')->name('index-product');
 Route::get('/categories', 'CategoryiesController@index')->name('index-category');
+Route::get('/categories/edit', 'CategoryiesController@edit/{id}')->name('edit-category');
+
 
 
 

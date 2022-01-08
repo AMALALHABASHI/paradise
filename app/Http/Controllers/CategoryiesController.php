@@ -14,10 +14,16 @@ class CategoryiesController extends Controller
    	$category = new Category;
    	$category->category_name=$request->category_name ;
    	$category->save();
-   	return back();
+   	return redirect()->route('index-category');
    }
    puplic function index(){
    	$categories = Category::all();
     return view('admin.categories.index',compact('categories'));
+   }
+   puplic function edit($id){
+      $category = Category::find($id);
+    return view('admin.categories.edit',compact('category'));
+
+      
    }
 }
